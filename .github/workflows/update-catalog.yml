@@ -2,8 +2,11 @@ name: Update Model Catalog
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Alle 2 AM UTC ogni giorno
-  workflow_dispatch:  # Permette esecuzione manuale
+    - cron: '0 2 * * *'  # 2 AM UTC every day
+  workflow_dispatch: 
+
+permissions:
+  contents: write 
 
 jobs:
   update-catalog:
