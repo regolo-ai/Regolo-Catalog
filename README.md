@@ -6,24 +6,6 @@ This repository contains the official catalog of available models on the Regolo 
 
 The catalog is automatically updated every 24 hours by fetching the latest list of available models from the Regolo API. This ensures that all applications using Regolo models always have access to the most up-to-date model list.
 
-## 📁 Files
-
-### `catalog-v1.csv`
-
-The main catalog file containing the list of available models. Format:
-- Plain CSV file
-- One model name per line
-- Models are sorted alphabetically
-- No header row
-
-**Example:**
-```
-deepseek-r1-70b
-gemma-3-27b-it
-gpt-oss-120b
-Llama-3.1-8B-Instruct
-...
-```
 
 ## 🔄 Automatic Updates
 
@@ -80,25 +62,22 @@ const models = await loadModels();
 console.log('Available models:', models);
 ```
 
-## 🔒 API Key
-
-The GitHub Action uses a `REGOLO_API_KEY` secret to authenticate with the Regolo API. This secret is configured in the repository settings and is not exposed in the workflow logs.
-
 ## 📊 Update Schedule
 
-- **Catalog Update**: 2:00 AM UTC daily
-- **Recommended Fetch Time**: 3:00 AM UTC or later (to ensure the latest catalog is available)
+- **Daily update**: 2:00 AM UTC
+- **Recommended fetch time**: 3:00 AM UTC or later
+
+## 🤝 Request a Model
+
+Want to see a specific model on Regolo? Let us know! You can:
+- Open an [issue](https://github.com/regolo-ai/Regolo-Catalog/issues)
+- Start a [discussion](https://github.com/regolo-ai/Regolo-Catalog/discussions)
+- Contact us at support@regolo.ai
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔗 Related Projects
 
 - [Regolo Observe](https://github.com/regolo-ai/regoloobserve) - Observability platform for Regolo models
-
-## 📧 Support
-
-For issues or questions, please open an issue in this repository or contact support@regolo.ai.
-
-
