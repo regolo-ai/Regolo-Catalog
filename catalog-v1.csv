@@ -1,7 +1,6 @@
 Llama-3.1-8B-Instruct
 Llama-3.3-70B-Instruct
 Qwen-Image
-Qwen2.5-VL-32B-Instruct
 Qwen3-8B
 Qwen3-Embedding-8B
 Qwen3-Reranker-4B
@@ -16,3 +15,4 @@ maestrale-chat-v0.4-beta
 mistral-small3.2
 qwen3-30b
 qwen3-coder-30b
+qwen3-vl-32b
